@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdelMo'ez Ismael Academy</title>
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header class="header">
+
+        <div class="flex">
+
+            <a href="../../index.html" class="logo">AbdelMo'ez Ismael Academy</a>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Start Side-bar -->
+    <div class="side-bar">
+
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="profile">
+            <img src="../../images/profile.jpg" class="image" alt="Profile Image">
+            <h3 class="name">Herr AbdelMo'ez Ismael</h3>
+            <p class="role">مدرس لغة ألمانية خبرة ٢٦ عاماً</p>
+            <a href="https://www.facebook.com/profile.php?id=100090429366780" class="btn"><i
+                    class="fa-brands fa-facebook"></i> view profile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../../index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="../../lecture.html"><i class="fas fa-file-pdf"></i><span>Lectures</span></a>
+            <a href="../../location.html"><i class="fas fa-location-dot"></i><span>Center Locations</span></a>
+            <a href="../../contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+
+    </div>
+
+    <!-- Start Main -->
+    <main>
+        <section class="courses">
+
+            <h1 class="heading">Alpha Haram <span>"كورس الإنقاذ"</span></h1>
+
+            <div class="select-container">
+                <select class="lecture-box" id="box-number" title="Select Lecture">
+                    <option value="">Show All</option>
+                </select>
+                <button class="lecteure-button" onclick="showBox()" aria-label="Show Card">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="box-container">
+
+                <!-- Lectures -->
+
+                <div class="box" data-name="الحصة الأولي">
+                    <div class="tutor">
+                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
+                        <div class="info">
+                            <h3>Herr AbdelMo'ez</h3>
+                            <span>11 Jan</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <a href="المحاضرة_الأولى_كورس_الإنقاذ.jpg">
+                            <img src="المحاضرة_الأولى_كورس_الإنقاذ.jpg" alt="الحصة الأولي">
+                        </a>
+                        <span>3 pic</span>
+                    </div>
+                    <h3 class="title">الحصة الأولي كورس الإنقاذ</h3>
+                    <a href="المحاضرة_الأولى_كورس_الإنقاذ.pdf" class="inline-btn">Download PDF</a>
+                </div>
+
+                <div class="box" data-name="الحصة الثانية">
+                    <div class="tutor">
+                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
+                        <div class="info">
+                            <h3>Herr AbdelMo'ez</h3>
+                            <span>18 Jan</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <a href="المحاضرة_الثانية_كورس_الإنقاذ.jpg">
+                            <img src="المحاضرة_الثانية_كورس_الإنقاذ.jpg" alt="الحصة الثانية">
+                        </a>
+                        <span>3 pic</span>
+                    </div>
+                    <h3 class="title">الحصة الثانية كورس الإنقاذ</h3>
+                    <a href="المحاضرة_الثانية_كورس_الإنقاذ.pdf" class="inline-btn">Download PDF</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+
+        &copy; 2024 by <span>Mohamed Basiouny</span> | all rights reserved!
+
+    </footer>
+
+    <!-- custom js file link  -->
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>

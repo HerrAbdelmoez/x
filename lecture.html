@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AbdelMo'ez Ismael Academy</title>
+   <link rel="icon" type="image/png" href="images/logo.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+   <!-- Start Header -->
+   <header class="header">
+
+      <div class="flex">
+
+         <a href="index.html" class="logo">AbdelMo'ez Ismael Academy</a>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+
+      </div>
+
+   </header>
+
+   <!-- Start Side-bar -->
+   <div class="side-bar">
+
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+         <img src="images/profile.jpg" class="image" alt="Profile Image">
+         <h3 class="name">Herr AbdelMo'ez Ismael</h3>
+         <p class="role">مدرس لغة ألمانية خبرة ٢٦ عاماً</p>
+         <a href="https://www.facebook.com/profile.php?id=100090429366780" class="btn"><i
+               class="fa-brands fa-facebook"></i> view profile</a>
+      </div>
+
+      <nav class="navbar">
+         <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <a href="lecture.html"><i class="fas fa-file-pdf"></i><span>Lectures</span></a>
+         <a href="location.html"><i class="fas fa-location-dot"></i><span>Center Locations</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+      </nav>
+
+   </div>
+
+   <!-- Start Main -->
+   <main>
+      <section class="lecture">
+
+         <h1 class="heading">أختر اليوم لعرض السنتر</h1>
+
+         <div class="select-tutor">
+            <select id="day-select" class="select-box" title="Select a day">
+               <option disabled selected hidden>اختر اليوم</option>
+               <option value="saturday">السبت</option>
+               <option value="sunday">الأحد</option>
+               <option value="monday">الاثنين</option>
+               <option value="tuesday">الثلاثاء</option>
+               <option value="wednesday">الأربعاء</option>
+               <option value="thursday">الخميس</option>
+               <option value="friday">الجمعة</option>
+            </select>
+         </div>
+
+         <div class="centers-container" id="centers-container">
+            <!-- Centers will be dynamically populated here -->
+
+         </div>
+
+      </section>
+
+   </main>
+
+   <!-- Start Footer -->
+   <footer class="footer">
+
+      &copy; 2024 by <span>Mohamed Basiouny</span> | all rights reserved!
+
+   </footer>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
