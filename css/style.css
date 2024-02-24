@@ -827,7 +827,7 @@ section {
 .lec-container-edition {
    display: flex;
    align-items: center;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
    justify-content: center;
    gap: 2rem;
 }
