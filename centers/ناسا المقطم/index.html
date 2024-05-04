@@ -1,237 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AbdelMo'ez Ismael Academy</title>
-    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <link rel="icon" type="image/png" href="../../images/logo.png" />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Start Header -->
     <header class="header">
+      <div class="flex">
+        <a href="../../index.html" class="logo">AbdelMo'ez Ismael Academy</a>
 
-        <div class="flex">
-
-            <a href="../../index.html" class="logo">AbdelMo'ez Ismael Academy</a>
-
-            <div class="icons">
-                <div id="menu-btn" class="fas fa-bars"></div>
-                <div id="toggle-btn" class="fas fa-sun"></div>
-            </div>
-
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
         </div>
-
+      </div>
     </header>
 
     <!-- Start Side-bar -->
     <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
 
-        <div id="close-btn">
-            <i class="fas fa-times"></i>
-        </div>
+      <div class="profile">
+        <img src="../../images/profile.jpg" class="image" alt="Profile Image" />
+        <h3 class="name">Herr AbdelMo'ez Ismael</h3>
+        <p class="role">مدرس لغة ألمانية خبرة ٢٦ عاماً</p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100090429366780"
+          class="btn"
+          ><i class="fa-brands fa-facebook"></i> view profile</a
+        >
+      </div>
 
-        <div class="profile">
-            <img src="../../images/profile.jpg" class="image" alt="Profile Image">
-            <h3 class="name">Herr AbdelMo'ez Ismael</h3>
-            <p class="role">مدرس لغة ألمانية خبرة ٢٦ عاماً</p>
-            <a href="https://www.facebook.com/profile.php?id=100090429366780" class="btn"><i
-                    class="fa-brands fa-facebook"></i> view profile</a>
-        </div>
-
-        <nav class="navbar">
-            <a href="../../index.html"><i class="fas fa-home"></i><span>Home</span></a>
-            <a href="../../lecture.html"><i class="fas fa-file-pdf"></i><span>Lectures</span></a>
-            <a href="../../location.html"><i class="fas fa-location-dot"></i><span>Center Locations</span></a>
-            <a href="../../contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-        </nav>
-
+      <nav class="navbar">
+        <a href="../../index.html"
+          ><i class="fas fa-home"></i><span>Home</span></a
+        >
+        <a href="../../lecture.html"
+          ><i class="fas fa-file-pdf"></i><span>Lectures</span></a
+        >
+        <a href="../../location.html"
+          ><i class="fas fa-location-dot"></i><span>Center Locations</span></a
+        >
+        <a href="../../contact.html"
+          ><i class="fas fa-headset"></i><span>contact us</span></a
+        >
+      </nav>
     </div>
 
     <!-- Start Main -->
     <main>
-        <section class="courses">
+      <section class="courses">
+        <h1 class="heading">Nasa Mokattam<span></span></h1>
 
-            <h1 class="heading">Nasa Mokattam<span></span></h1>
+        <div class="select-container">
+          <select class="lecture-box" id="box-number" title="Select Lecture">
+            <option value="">Show All</option>
+          </select>
+          <button
+            class="lecteure-button"
+            onclick="showBox()"
+            aria-label="Show Card"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
 
-            <div class="select-container">
-                <select class="lecture-box" id="box-number" title="Select Lecture">
-                    <option value="">Show All</option>
-                </select>
-                <button class="lecteure-button" onclick="showBox()" aria-label="Show Card">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+        <div class="box-container">
+          <!-- Lectures -->
+
+          <!-- المراجعة الثامنة -->
+          <div class="box" data-name="المراجعة الثامنة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>30 APR</span>
+              </div>
             </div>
-
-            <div class="box-container">
-
-                <!-- Lectures -->
-
-                <!-- المراجعة السابعة -->
-                <div class="box" data-name="المراجعة السابعة">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image" />
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>23 APR</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة السابعة.png">
-                            <img src="../+/واجب المراجعة السابعة.png" alt="المراجعة السابعة" />
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة السابعة في المنهج</h3>
-                    <a href="المراجعة السابعة.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-                
-                <!-- المراجعة السادسة -->
-                <div class="box" data-name="المراجعة السادسة">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image" />
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>16 APR</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة السادسة.png">
-                            <img src="../+/واجب المراجعة السادسة.png" alt="المراجعة السادسة" />
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة السادسة في المنهج</h3>
-                    <a href="المراجعة السادسة.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-
-                <!-- المراجعة الرابعة -->
-                <div class="box" data-name="المراجعة الرابعة">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>26 MAR</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة الرابعة.png">
-                            <img src="../+/واجب المراجعة الرابعة.png" alt="المراجعة الرابعة">
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة الرابعة في المنهج</h3>
-                    <a href="المراجعة الرابعة.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-                
-                <!-- المراجعة الثالثة -->
-                <div class="box" data-name="المراجعة الثالثة">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>19 MAR</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة الثالثة.png">
-                            <img src="../+/واجب المراجعة الثالثة.png" alt="المراجعة الثالثة">
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة الثالثة في المنهج</h3>
-                    <a href="المراجعة الثالثة.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-
-                <!-- المراجعة الثانية -->
-                <div class="box" data-name="المراجعة الثانية">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>5 MAR</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة الثانية.png">
-                            <img src="../+/واجب المراجعة الثانية.png" alt="المراجعة الثانية">
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة الثانية في المنهج</h3>
-                    <a href="المراجعة الثانية.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-
-                <!-- المراجعة الأولى -->
-                <div class="box" data-name="المراجعة الأولي">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>27 Feb</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب المراجعة الأولي.jpg">
-                            <img src="../+/واجب المراجعة الأولي.jpg" alt="المراجعة الأولي">
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">المراجعة الأولي في المنهج</h3>
-                    <a href="المراجعة الأولي.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-
-                <!-- الحصة الأخيرة -->
-                <div class="box" data-name="الحصة الأخيرة">
-                    <div class="tutor">
-                        <img src="../../images/profile.jpg" class="image" alt="Tutor Image">
-                        <div class="info">
-                            <h3>Herr AbdelMo'ez</h3>
-                            <span>20 Feb</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <a href="../+/واجب الحصة الأخيرة.jpg">
-                            <img src="../+/واجب الحصة الأخيرة.jpg" alt="الحصة الأخيرة">
-                        </a>
-                        <span>الواجب</span>
-                    </div>
-                    <h3 class="title">الحصة الأخيرة في المنهج</h3>
-                    <a href="الحصة الأخيرة.pdf" class="inline-btn">Download PDF</a>
-                </div>
-                <!--  -->
-
+            <div class="thumb">
+              <a href="../+/واجب المراجعة الثامنة.png">
+                <img
+                  src="../+/واجب المراجعة الثامنة.png"
+                  alt="المراجعة الثامنة"
+                />
+              </a>
+              <span>الواجب</span>
             </div>
+            <h3 class="title">المراجعة الثامنة في المنهج</h3>
+            <a href="المراجعة الثامنة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
 
-        </section>
+          <!-- المراجعة السابعة -->
+          <div class="box" data-name="المراجعة السابعة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>23 APR</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة السابعة.png">
+                <img
+                  src="../+/واجب المراجعة السابعة.png"
+                  alt="المراجعة السابعة"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة السابعة في المنهج</h3>
+            <a href="المراجعة السابعة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- المراجعة السادسة -->
+          <div class="box" data-name="المراجعة السادسة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>16 APR</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة السادسة.png">
+                <img
+                  src="../+/واجب المراجعة السادسة.png"
+                  alt="المراجعة السادسة"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة السادسة في المنهج</h3>
+            <a href="المراجعة السادسة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- المراجعة الرابعة -->
+          <div class="box" data-name="المراجعة الرابعة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>26 MAR</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة الرابعة.png">
+                <img
+                  src="../+/واجب المراجعة الرابعة.png"
+                  alt="المراجعة الرابعة"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة الرابعة في المنهج</h3>
+            <a href="المراجعة الرابعة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- المراجعة الثالثة -->
+          <div class="box" data-name="المراجعة الثالثة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>19 MAR</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة الثالثة.png">
+                <img
+                  src="../+/واجب المراجعة الثالثة.png"
+                  alt="المراجعة الثالثة"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة الثالثة في المنهج</h3>
+            <a href="المراجعة الثالثة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- المراجعة الثانية -->
+          <div class="box" data-name="المراجعة الثانية">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>5 MAR</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة الثانية.png">
+                <img
+                  src="../+/واجب المراجعة الثانية.png"
+                  alt="المراجعة الثانية"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة الثانية في المنهج</h3>
+            <a href="المراجعة الثانية.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- المراجعة الأولى -->
+          <div class="box" data-name="المراجعة الأولي">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>27 Feb</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب المراجعة الأولي.jpg">
+                <img
+                  src="../+/واجب المراجعة الأولي.jpg"
+                  alt="المراجعة الأولي"
+                />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">المراجعة الأولي في المنهج</h3>
+            <a href="المراجعة الأولي.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+
+          <!-- الحصة الأخيرة -->
+          <div class="box" data-name="الحصة الأخيرة">
+            <div class="tutor">
+              <img
+                src="../../images/profile.jpg"
+                class="image"
+                alt="Tutor Image"
+              />
+              <div class="info">
+                <h3>Herr AbdelMo'ez</h3>
+                <span>20 Feb</span>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="../+/واجب الحصة الأخيرة.jpg">
+                <img src="../+/واجب الحصة الأخيرة.jpg" alt="الحصة الأخيرة" />
+              </a>
+              <span>الواجب</span>
+            </div>
+            <h3 class="title">الحصة الأخيرة في المنهج</h3>
+            <a href="الحصة الأخيرة.pdf" class="inline-btn">Download PDF</a>
+          </div>
+          <!--  -->
+        </div>
+      </section>
     </main>
 
     <!-- Start Footer -->
     <footer class="footer">
-
-        &copy; 2024 by <span>Mohamed Basiouny</span> | all rights reserved!
-
+      &copy; 2024 by <span>Mohamed Basiouny</span> | all rights reserved!
     </footer>
 
     <!-- custom js file link  -->
     <script src="../../js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
